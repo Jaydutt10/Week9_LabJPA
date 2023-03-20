@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package servlets;
 
 import java.io.*;
@@ -41,8 +36,7 @@ public class UserServlet extends HttpServlet {
                     String role_name = request.getParameter("role");
                     User user = us.get(email);
                     request.setAttribute("email", email);
-                    request.setAttribute("selectedUser", user);
-//                    request.setAttribute("selectedRole", role_name);
+                    request.setAttribute("selectedUser", user);                    
                     request.setAttribute("message", "edit");
                     
                 } catch (Exception ex) {
